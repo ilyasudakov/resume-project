@@ -45,6 +45,9 @@ ul {
     li span {
         color: #ccc;
     }
+    &:last-child {
+        margin-bottom: 0;
+    }
 }
 
 @media (max-width: 800px) {
