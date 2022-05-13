@@ -3,9 +3,9 @@ const sass = require("gulp-sass")(require("sass"));
 const sync = require("browser-sync").create();
 
 const generateCSS = (cb) => {
-  src("app/scss/*.scss")
+  src("docs/scss/*.scss")
     .pipe(sass().on("error", sass.logError))
-    .pipe(dest("app/css"))
+    .pipe(dest("docs/css"))
     .pipe(sync.stream());
   cb();
 };
@@ -13,12 +13,12 @@ const generateCSS = (cb) => {
 const watchFiles = () => {
   sync.init({
     server: {
-      baseDir: "app",
+      baseDir: "docs",
     },
   });
   generateCSS;
-  watch("app/scss/*.scss", generateCSS);
-  watch("app/**.html").on("change", sync.reload);
+  watch("docs/scss/*.scss", generateCSS);
+  watch("docs/**.html").on("change", sync.reload);
 };
 
 exports.sass = generateCSS;
