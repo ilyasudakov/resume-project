@@ -1,21 +1,23 @@
 * {
     padding: 0;
     margin: 0;
-    color: #bbb;
+    color: #999;
 }
 
 body {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    // align-items: center;
     background-color: #222;
     font-family: "Roboto Flex", sans-serif;
     font-size: 22px;
 }
 
 .content {
-    padding: 50px 10px;
-    max-width: 600px;
+    padding: 50px 25px;
+    padding-top: 8rem;
+    padding-left: 6rem;
+    max-width: 700px;
 }
 
 .block {
@@ -27,6 +29,20 @@ body {
     }
 }
 
+a {
+    color: #ccc;
+}
+
+ul {
+    li {
+        margin-bottom: 1.5rem;
+        margin-left: 1.5rem;
+    }
+}
+
 .paragraph {
     margin-bottom: 5rem;
+    li span {
+        color: #ccc;
+    }
 }
