@@ -7,6 +7,7 @@
 body {
   display: flex;
   flex-direction: column;
+  align-items: center;
   background-color: #222;
   font-family: "Roboto Flex", sans-serif;
   font-size: 22px;
@@ -40,4 +41,15 @@ ul li {
 }
 .paragraph li span {
   color: #ccc;
+}
+
+@media (max-width: 800px) {
+  .content {
+    padding: 50px 30px;
+  }
+}
+@media (max-width: 500px) {
+  .content {
+    padding: 50px 10px;
+  }
 }
