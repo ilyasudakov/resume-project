@@ -10,17 +10,19 @@ body {
   align-items: center;
   background-color: #1c2026;
   font-family: "Roboto Flex", sans-serif;
-  font-size: 22px;
+  font-size: 18px;
 }
 
 .content {
-  padding: 50px 25px;
-  padding-top: 8rem;
-  padding-left: 6rem;
+  padding: 4rem 3rem;
   max-width: 700px;
 }
 
+.block {
+  font-size: 1rem;
+}
 .block--highlighted {
+  font-size: 1.25rem;
   margin-bottom: 0.5rem;
   letter-spacing: 1px;
   font-weight: 600;
@@ -32,12 +34,13 @@ a {
 }
 
 ul li {
-  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
   margin-left: 1.5rem;
 }
 
 .paragraph {
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
 }
 .paragraph li span {
   color: #ccc;
@@ -54,5 +57,9 @@ ul li {
 @media (max-width: 500px) {
   .content {
     padding: 50px 10px;
+  }
+
+  .paragraph {
+    margin-bottom: 2rem;
   }
 }
